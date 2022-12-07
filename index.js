@@ -6,7 +6,7 @@ import { userRouter } from "./routes/user.js"
 import { mapRouter } from "./routes/map.js"
 
 const app = express()
-const port = 8080
+const port = 80
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({
