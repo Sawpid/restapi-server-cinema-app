@@ -59,7 +59,7 @@ const initMoviesTop = (filter) => {
                         "images": [
                             movie.posterUrl
                         ],
-                        "poster": (movie.posterUrlPreview.indexOf("/")) ? movie.posterUrlPreview.split("/").at(-1) : "",
+                        "poster": ((movie.filmId)?movie.filmId:movie.kinopoiskId)+".jpg",
                         "tags": movie.genres.map(x => {return {tagName: x.genre}})
                     }
                     moviesData.push(item)
