@@ -48,6 +48,7 @@ const initMoviesTop = (filter) => {
                 let films = body.films
                 if (body.items) {films = body.items}
                 films.forEach( movie => {
+                    console.log( movie)
                     const item = {
                         "update": 0,
                         "type": filter.type,
