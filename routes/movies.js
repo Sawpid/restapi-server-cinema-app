@@ -58,7 +58,7 @@ const initMoviesTop = (filter) => {
                         "images": [
                             movie.posterUrl
                         ],
-                        "poster": movie.posterUrlPreview.split("/").at(-1),
+                        "poster": movie.posterUrlPreview.toString().split("/").at(-1),
                         "tags": movie.genres.map(x => {return {tagName: x.genre}})
                     }
                     moviesData.push(item)
